@@ -1,0 +1,9 @@
+package com.example.libreriaapi.Repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EditorialRepository extends JpaRepository<Editorial, Integer> {
+    List<Editorial> findByActivoTrue();
+}
+
